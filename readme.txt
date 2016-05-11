@@ -1,3 +1,0 @@
-1) Os arquivos desta pasta devem ser baixados em uma mesma pasta do seu computador.
-Obs.: Caso ao baixar um arquivo nome_do_arquivo.js o navegador acuse a presença de um vírus, vc deve abrir o arquivo pelo navegador e copiar o código para um arquivo que vc mesmo vai criar no seu computador e salva-lo como nome_do_arquivo.js na mesma pasta que estão os outros arquivos.
-2) Após baixados todos os arquivos um uma única pasta basta, vc deve abrir o arquivo index.html (com o navegador) para ver como ficou a mini-aplicação TEMPORÁRIA.
