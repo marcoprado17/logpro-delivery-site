@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<title>
+			LogPRO
+		</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+
+	<body>
+		<!--Cabeçalho-->
+		<div id="header">
+			<p id="welcome-text">Bem vindo a LogPRO! Você já pode solicitar suas entregas.</p>
+			<img id="logo" src="Images/logo.png" />
+		</div>
+
+		<!--Contém as 3 janelas principais-->
+		<div id="main-windows">
+			<div id="menu">
+				<div id="new-delivery-btn" class="menu-btn-unselected">
+					<img src="Images/motorcycle_icon_unselected.png" class="menu-btn-image" />
+					<p class="menu-btn-text">Nova</p>
+					<p class="menu-btn-text">Entrega</p>
+				</div>
+
+				<div class="menu-divider"></div>
+
+				<div id="monitor-delivery-btn" class="menu-btn-unselected">
+					<img src="Images/monitor_icon_unselected.png" id="menu-monitor-delivery-btn-image" class="menu-btn-image" />
+					<p class="menu-btn-text">Acompanhar</p>
+					<p class="menu-btn-text">Entrega</p>
+				</div>
+
+				<div class="menu-divider"></div>
+
+				<div id="hitory-btn" class="menu-btn-unselected">
+					<img src="Images/history_icon_unselected.png" id="menu-history-btn-image" class="menu-btn-image" />
+					<p class="menu-btn-text">Histórico</p>
+				</div>
+
+				<div class="menu-divider"></div>
+			</div>
+
+			<div id="main" class="main-not-visible">
+				<div id="main-content" class="main-content-not-visible">
+					<!-- <div id="close-main-window-btn">
+						<img src="Images/close_main_window.png" id="close-main-window-image" />
+					</div> -->
+
+					<div id="main-content-area">
+						<div id="new-delivery" >
+							<div class="panel panel-default new-destiny-panel last-destiny">
+								<div class="panel-heading new-delivery-panel-heading">
+									<p class="delivery-form-title">Entrega A</p>
+									<!-- <img src="Images/close.png" class="close-adress-form-btn"> -->
+								</div>
+								<div class="panel-body">
+									<div class="form-group adress-input-div">
+										<label>Endereço:</label>
+									    <input type="text" class="form-control adress-input" placeholder="Ex: São José dos Campos, Av. Dr. Nélson D'Ávila, 234">
+									</div>
+									<div class="form-group adress-complement-form">
+										<label>Complemento:</label>
+									    <input type="text" class="form-control" placeholder="Ex: Bloco A, apt 73">
+									</div>
+									<div class="form-group">
+										<label>Valor total do(s) produto(s) em R$:</label>
+									    <input type="number" class="form-control" placeholder="Ex: 42,50"/>
+									</div>
+									<div class="form-group">
+										<label style="width:100%">Descrição do(s) produto(s):</label>
+									    <textarea type="text" class="form-control" placeholder="Ex: 1 pizza de calabresa grande e 1 coca-cola 2L" rows="2" style="resize: vertical"></textarea>
+									</div>
+									<div class="form-group">
+										<label>Informações adicionais:</label>
+									    <textarea type="text" class="form-control" placeholder="Ex.: O cliente informou que a campanhinha está quebrada" rows="2" style="resize: vertical"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="text-center">
+								<button id="new-destiny-btn" type="button" class="btn btn-default text-center">+1 Ponto de Entrega</button>
+							</div>
+							<div id="max-delivery-reached-alert" class="alert alert-warning">
+								Não é possível adicionar novos pontos de entrega. O limite máximo permitido é de <span></span> pontos de entrega.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="map">
+			
+			</div>
+		</div>
+
+		<!--Roda pé-->
+		<div id="footer">
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script async defer
+	      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRTRS2KYUejkDQJxU0mCxKy7m7evwLCXQ&callback=initMap">
+	    </script>
+    	<script src="Scripts/height_controller.js"></script>
+    	<script src="Scripts/width_controller.js"></script>
+    	<script src="Scripts/hide_show_main_window.js"></script>
+    	<script src="Scripts/delivery_destiny_controller.js"></script>
+    	<script src="Scripts/delivery_map_manager.js"></script>
+    	<script src="Scripts/app.js"></script>
+	</body>
+</html>

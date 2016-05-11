@@ -1,0 +1,226 @@
+html {
+	width: 100%;
+  	height: 100%;
+  	margin: 0em;
+  	padding: 0em;
+}
+
+body {
+	width: 100%;
+  	height: 100%;
+  	margin: 0em;
+  	padding: 0em;
+}
+
+#header {
+	/* width is defined in width_controller.js */
+	/* height is defined height_controller.js */
+	background-color: black;
+	box-shadow: 0em 0.05em 0.5em black;
+	position: relative;
+	z-index: 1;
+}
+
+#welcome-text {
+	color: #e1e1ea;
+	font-size: 1.05em;
+	position: absolute;
+	top: 0.35em;
+	left: 0.5em;
+	float: left;
+}
+
+#logo {
+	height: 1.875em;
+	position: absolute;
+	top: 0.225em;
+	right: 0.4em;
+	float: right;
+}
+
+#main-windows {
+	/* width is defined in width_controller.js */
+	/* height is defined height_controller.js */
+	display: block;
+	position: relative;
+	z-index: 0;
+}
+
+#menu {
+	width: 8em;
+	height: 100%;
+	position: relative;
+	float: left;
+	background-color: #333333;
+}
+
+.menu-btn-unselected {
+	height: 8em;
+	width: 8em;
+	/*border: 1px dashed orange;*/
+}
+
+.menu-btn-unselected > p {
+	color: #cccccc;
+}
+
+.menu-btn-selected {
+	right: 0em;
+	width: 100%;
+	height: 8em;
+	border-left: 0.3em solid #dadada;
+	border-bottom: 0.3em solid #dadada;
+	border-top: 0.3em solid #dadada;
+	border-bottom-left-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	background-color: #dadada;
+}
+
+.menu-btn-selected p {
+	color: #333333;
+	font-weight: bold;
+
+}
+
+.menu-divider {
+	width: 85%;
+	left: 7%;
+	height: 0.3em;
+	background-color: #333333;
+	opacity: 0.9;
+	box-shadow: 0em 0em 0.3em #cccccc;
+	position: relative;
+	z-index: 1;
+}
+
+.menu-btn-image {
+	width: 40%;
+	position: relative;
+	margin-left: 30%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+#menu-monitor-delivery-btn-image {
+	width: 30%;
+	position: relative;
+	margin-left: 35%;
+	margin-top: 15%;
+	margin-bottom: 10%;
+}
+
+#menu-history-btn-image {
+	width: 40%;
+	position: relative;
+	margin-left: 30%;
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
+
+.menu-btn-text {
+	color: #cccccc;
+	font-size: 0.9em;
+	margin: 0em;
+	padding: 0em;
+	text-align: center;
+}
+
+#main {
+	height: 100%;
+	/* width is defined in hide_show_main_window.js */
+	position: relative;
+	float: left;
+	background-color: #dadada;
+	border-right: 0.1em solid gray;
+}
+
+.main-visible {
+	display: inline;
+}
+
+.main-not-visible {
+	display: none;
+}
+
+#main-content {
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+}
+
+.main-content-visible {
+	display: block;
+}
+
+.main-content-not-visible {
+	display: none;
+}	
+
+#close-main-window-btn {
+	width: 100%;
+	height: 1.7em;
+}
+
+#close-main-window-image {
+	height: 1.7em;
+	position: relative;
+	float: right;
+}
+
+#main-content-area {
+	width: 90%;
+	position: relative;
+	left: 5%;
+	top: 1.75em;
+}
+
+.adress-number-form {
+	width: 37%;
+	float: left;
+	position: relative;
+}
+
+.adress-complement-form {
+
+}
+
+#adress-not-find-alert {
+	padding: 0.3em;
+	border-top-left-radius: 0; 
+	border-top-right-radius: 0;  
+}
+
+ .new-delivery-panel-heading {
+ 	height: 3em;
+ }
+
+.delivery-form-title {
+	float: left;
+}
+
+.close-adress-form-btn {
+	height: 2em;
+	position: relative;
+	float: right;
+	right: -0.2em;
+	top: -0.2em;
+	border: 0.3em solid #666666;
+	border-radius: 0.5em;
+}
+
+#new-destiny-btn {
+	margin-bottom: 1.3em;
+}
+
+#map {
+	height: 100%;
+}
+
+#footer {
+	/* width is defined in width_controller.js */
+	/* height is defined height_controller.js */
+	background-color: #cccccc;
+	box-shadow: 0em -0.05em 0.5em black;
+	position: relative;
+	z-index: 1;
+}
